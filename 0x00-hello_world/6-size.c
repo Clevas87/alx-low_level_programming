@@ -1,4 +1,12 @@
 #include <stdio.h>
+
+
+/**
+  * Prints size of various data types
+  * Prints type of comp compiled on 
+  * Always return 0
+  */
+
 int main(void) {
 	printf("Size of a char: %zu byte(s)\n", sizeof(char));
 	printf("Size of an int: %zu byte(s)\n", sizeof(int));
