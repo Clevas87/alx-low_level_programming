@@ -4,6 +4,7 @@
 /**
  * main - A programme that assign a random number to variable n
  *
+ *
  * Return: Always 0 (Success)
  *
  */
