@@ -3,7 +3,7 @@
 #include <time.h>
 
 /**
- * main - A programme that print all possible combinations of single-digit numbers
+ * main - A programme that prints combinations of single-digit num
  *
  * Return: Always 0 (Success)
  */
@@ -11,6 +11,7 @@
 int main(void)
 {
 	int a;
+
 	for (a = 0; a < 10; a++)
 	{
 	putchar(a + '0');
