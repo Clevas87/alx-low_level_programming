@@ -2,26 +2,26 @@
 
 /**
  * _atoi - A function that convert a string to an integer
- * @str: The pointer to convert
+ * @s: The pointer to convert
  * Return: A integer
  */
 
-int _atoi(char *str)
+int _atoi(char *s)
 {
 int c = 0;
 unsigned int ni = 0;
 int min = 1;
 int isi = 0;
-while (str[c])
+while (s[c])
 {
-if (str[c] == 45)
+if (s[c] == 45)
 {
 min *= -1;
 }
-while (str[c] >= 48 && str[c] <= 57)
+while (s[c] >= 48 && s[c] <= 57)
 {
 isi = 1;
-ni = (ni * 10) + (str[c] - '0');
+ni = (ni * 10) + (s[c] - '0');
 c++
 }
 if (isi == 1)
