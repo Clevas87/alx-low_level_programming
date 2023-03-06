@@ -21,4 +21,5 @@ check = 1;
 }
 }
 if (check == 0)
+return (n);	
 }
