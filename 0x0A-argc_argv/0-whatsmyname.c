@@ -6,7 +6,7 @@
  * @argc: argument count
  * @argv: argument vector
  *
- * Return: Alawys 0 (Success)
+ * Return: Alawys zero
  */
 int main(int argc, char *argv[])
 {
