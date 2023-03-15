@@ -30,6 +30,9 @@ a[u] = malloc(sizeof(int) * width);
 if (a[u] == NULL)
 {
 for (v = u; v >= 0; v--)
+{
+free(a[v]);
+}
 free(a);
 return (NULL);
 }
