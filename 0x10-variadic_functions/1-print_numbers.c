@@ -20,6 +20,6 @@ printf("%d", va_arg(nums, int));
 if (index != (v - 1) && separator != NULL)
 printf("%s", separator);
 }
-printf("\v");
+printf("\n");
 va_end(nums);
 }
