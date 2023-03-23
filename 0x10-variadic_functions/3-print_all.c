@@ -8,20 +8,20 @@
  */
 void print_all(const char * const format, ...)
 {
-int v = 0;
+int i = 0;
 char *str, *sep = "";
 va_list list;
 va_start(list, format);
 if (format)
 {
-while (format[v])
+while (format[i])
 {
-switch (format[v])
+switch (format[i])
 {
 case 'c':
 printf("%s%c", sep, va_arg(list, int));
 break;
-case 'v':
+case 'i':
 printf("%s%d", sep, va_arg(list, int));
 break;
 case 'f':
@@ -34,11 +34,11 @@ str = "(nil)";
 printf("%s%s", sep, str);
 break;
 default:
-v++;
+i++;
 continue;
 }
 sep = ",";
-v++;
+i++;
 }
 }
 printf("\n");
