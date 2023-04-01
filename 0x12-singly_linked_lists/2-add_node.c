@@ -1,5 +1,5 @@
 #include "list.h"
-#include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 
 /**
@@ -21,6 +21,7 @@ while (str[length])
 length++;
 temp->len = length;
 temp->str = strdup(str);
+temp->next = *head;
 *head = temp;
 return (temp);
 }
