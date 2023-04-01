@@ -1,7 +1,7 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "lists.h"
-#include <stdio.h>
+#include "list.h"
 
 /**
  * add_node_end - A function that adds a new node at
