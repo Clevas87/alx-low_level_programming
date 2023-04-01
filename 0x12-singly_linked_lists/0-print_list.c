@@ -1,4 +1,4 @@
-#include "lists.h"
+#include "list.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -6,7 +6,7 @@
  * print_list - Prints all elements of list_t list.
  * @h: The list_t list.
  *
- * Return: The number of nodes in list_t list.
+ * Return: The number of nodes in h.
  */
 
 size_t print_list(const list_t *h)
