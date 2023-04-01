@@ -9,7 +9,7 @@
  * @head: The head of the linked list.
  * @str: The string to store in the list.
  *
- * Return: address of the new element, or NULL if it failed
+ * Return: The address of the heade.
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
