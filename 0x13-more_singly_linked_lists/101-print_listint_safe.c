@@ -3,17 +3,17 @@
 #include <stdlib.h>
 
 /**
- * free_listint - A function that prints a listint_t linked list.
+ * free_listp - A function that prints a listint_t linked list.
  * @head: The head of the list.
  * Description: Write a function that prints a listint_t linked list.
  *
  * Return: Nothing.
  */
 
-void free_listint(listint_t **head)
+void free_listp(listp_t **head)
 {
-listint_t *temp;
-listint_t *crnt;
+listp_t *temp;
+listp_t *crnt;
 if (head != NULL)
 {
 crnt = *head;
@@ -35,11 +35,11 @@ free(temp);
 size_t print_listint_safe(const listint_t *head)
 {
 size_t nnodes = 0;
-listint_t *hptr, *new, *add;
+listp_t *hptr, *new, *add;
 hptr = NULL;
 while (head != NULL)
 {
-new = malloc(sizeof(listint_t));
+new = malloc(sizeof(listp_t));
 if (new == NULL)
 exit(98);
 new = (void *)head;
@@ -49,10 +49,10 @@ add = hptr;
 while (add->next != NULL)
 {
 add = add->next;
-if (head == add);
+if (head == add->p)
 {
 printf("->[%p] %d\n", (void *)head, head->n);
-free_listint(&hptr);
+free_listp(&hptr);
 return (nnodes);
 }
 }
@@ -60,6 +60,6 @@ printf("[%p] %d\n", (void *)head, head->n);
 head = head->next;
 nnodes++;
 }
-free_listint(&hptr);
+free_listp(&hptr);
 return (nnodes);
 }
