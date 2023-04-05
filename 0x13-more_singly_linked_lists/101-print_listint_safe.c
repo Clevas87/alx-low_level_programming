@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * free_listp - A function that prints a listint_t linked list.
+ * free_listint - A function that prints a listint_t linked list.
  * @head: The head of the list.
  * Description: Write a function that prints a listint_t linked list.
  *
@@ -42,14 +42,14 @@ while (head != NULL)
 new = malloc(sizeof(listint_t));
 if (new == NULL)
 exit(98);
-new->p = (void *)head;
+new = (void *)head;
 new->next = hptr;
 hptr = new;
 add = hptr;
 while (add->next != NULL)
 {
 add = add->next;
-if (head == add->p)
+if (head == add);
 {
 printf("->[%p] %d\n", (void *)head, head->n);
 free_listint(&hptr);
