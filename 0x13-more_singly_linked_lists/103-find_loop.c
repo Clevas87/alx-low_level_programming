@@ -30,7 +30,4 @@ hare = hare->next;
 return (tortoise);
 }
 tortoise = tortoise->next;
-hare = (hare->next)->next;
-}
-return (NULL);
-}
+hare = (hare
